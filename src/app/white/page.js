@@ -3,7 +3,6 @@ import { authOptions } from "../../../pages/api/auth/[...nextauth]";
 
 export default async function Wrtie() {
         let session = await getServerSession(authOptions);
-        console.log(session);
         if(!session){
             return (
                 <div>
